@@ -35,7 +35,7 @@ public class Display extends JPanel implements Runnable {
 		frame.add(p);
 		
 		
-		Timer t = new Timer((int) 6500 * hands, new ActionListener() {
+		Timer t = new Timer((int) 5500 * hands, new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frame.remove(p);
 			}

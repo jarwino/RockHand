@@ -96,9 +96,9 @@ public class Hand extends Entity{
 	}
 	
 	public void render(Graphics g){
-		
+		if(this.time % 20 == 0){
 		if(this.time > ((-y * 10) + 4120) && this.time < ((-y * 10) + 6120) && !hasScored){
-			System.out.println(type);
+			//System.out.println(type);
 			switch(type) {
 
 			case 1:
@@ -135,10 +135,11 @@ public class Hand extends Entity{
 			}		
 		} 
 		
+		
+	}	
 		if(this.time < ((-y * 10) + 14120)){
 			g.drawImage(image, x, (int) (y+(time / 10)), null);
 		}
-		
 	}
 
 }

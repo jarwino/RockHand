@@ -188,7 +188,7 @@ public class RockHand implements Runnable {
 				controller.addListener(listener);
 
 				while (!Backend.isValidHeight(listener.getFrame())) {
-					System.out.println("NOT GOOD");
+					//System.out.println("NOT GOOD");
 				}
 
 				controller.removeListener(listener);
@@ -286,7 +286,7 @@ public class RockHand implements Runnable {
 		frame.invalidate();
 		frame.repaint();
 
-		Timer t = new Timer((int) 6500 * hands, new ActionListener() {
+		Timer t = new Timer((int) 5500 * hands, new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				controller.removeListener(listener);
 				System.out.println("called timer");
